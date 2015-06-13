@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Jobvite FIFA 15 Team Picker</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/css/bootstrap.css" rel="stylesheet">
+    <link href="css/team-picker.css" rel="stylesheet">
+    <link href="css/select2.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"> Jobvite FIFA 15 Team Picker</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="../team_picker/index.html" class="pick-teams">Pick Teams</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="content jumbotron">
+        <div class="team-selector">
+            <h2>Pick your teammate. </h2>
+            <p class="lead">The program will help pick you your FIFA 15 team mate . Please note that the app is not responsible in influencing the resuls of any game.</p>
+            <div>
+                <div id="player-selector1" class="player-selector"></div>
+                <div id="player-selector2" class="player-selector"></div>
+                <div id="player-selector3" class="player-selector"></div>
+                <div id="player-selector4" class="player-selector"></div>
+                <div id="player-selector5" class="player-selector"></div>
+                <div id="player-selector6" class="player-selector"></div>
+                
+            </div>
+            <p>
+                <button type="button" class="draw-teams btn btn-lg btn-primary">Draw Teams</button>
+            </p>
+        </div>
+        <div class="teams">
+               
+        </div>
+         <div class="count-content"> 
+                    <a href="#" class="draw-teams">Try again ?</a> Draw Count = <span class="draw-count"></span>
+                    <p><a href="#" class="draw-games-nav">Draw Games</a> when you are finished !</p>
+        </div>
+       
+        <div class="games">
+            
+            <p>
+                <button type="button" class="draw-games btn btn-lg btn-primary">Draw Games</button>
+            </p>
+        </div>
+           
+      </div>
+
+    </div><!-- /.container -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/select2.min.js"></script>
+    <script type="text/javascript" src="js/teampicker.js"></script>
+  </body>
+</html>
