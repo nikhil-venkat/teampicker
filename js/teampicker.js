@@ -1,10 +1,14 @@
+    /*
+    Teampicker 
+    @author : Nikhil 
+    */
     var teampickerService = function(){};
     teampickerService.prototype = {
-        renderOptions: function(){            
-            var playerSelectors = $('.player-selector')
+        renderOptions: function(){
+            var playerSelectors = $('.player-selector');
             this.playersCount = playerSelectors.length;
             for(var i=0 ; i <  this.playersCount ; i++){
-                var id = $(playerSelectors[i]).attr('id')
+                var id = $(playerSelectors[i]).attr('id');
                     $("#"+id).select2({
                     placeholder: "Select player",
                     allowClear: true,
@@ -13,10 +17,10 @@
             }
         },
         players: [
-            { id: 0, text: 'Ali' }, 
-            { id: 1, text: 'Ameya' }, 
-            { id: 2, text: 'Mohammed' }, 
-            { id: 3, text: 'Nikhil' }, 
+            { id: 0, text: 'Ali' },
+            { id: 1, text: 'Ameya' },
+            { id: 2, text: 'Mohammed' },
+            { id: 3, text: 'Nikhil' },
             { id: 4, text: 'Pranav' },
             { id: 5, text: 'Shamik' }
         ],
@@ -40,13 +44,13 @@
                 var id = 'player-selector'+i;
                 if($("#"+id).select2('data')){
                     var player = $("#"+id).select2('data').text;
-                    result.push(player);  
+                    result.push(player);
                 }
                 
             }
             result = this.shufflePlayers(result);
             for(var j=0 ; j < this.playersCount; j++){
-                if(j ==0 || j==1){
+                if(j === 0 || j==1){
                     this.teams.Team1.push(result[j]);
                 }
                 if(j ==2 || j==3){
@@ -75,7 +79,7 @@
           return array;
         },
         renderTeams: function(){
-            $('.teams').html(' ')
+            $('.teams').html(' ');
             var html = [];
             for (var team in this.teams){
                 html.push( '<div class="col-lg-3 team1"><h4 class="team-name">'+team+'</h4>'+this.teams[team].join(' + ')+' </div>');
@@ -104,7 +108,7 @@
             return result;
         },
         renderGames: function(){
-            var html = []; 
+            var html = [];
             for (var loop=0; loop< this.games.length; loop++){
                 html.push( '<div class="col-lg-3 team1"><h4 class="game-name"></h4>'+this.games[loop]+' </div>');
             }

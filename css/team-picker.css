@@ -1,9 +1,11 @@
+/*  @author : Nikhil
+Team picker css  */
 .content{
     margin-top: 150px;
     overflow: hidden;
 }
 .player-selector{
-    padding:0px 5px;
+    padding: 0px 5px;
 }
 .draw-teams,.draw-games,.count-content{
     margin-top: 30px;
@@ -18,5 +20,5 @@
     display: block;
 }
 .games-title > h3{
-    margin-left:15px;
+    margin-left: 15px;
 }
